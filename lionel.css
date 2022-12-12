@@ -164,6 +164,108 @@ font-weight: 700;
     margin-left: 15rem;
 }
 
+.list {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    margin: auto;
+    padding-left: 5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.list h3 {
+    color: black;
+    font-size: 20px;
+    padding: 1rem 0 0 0;
+}
+
+.title {
+    background: white;
+    padding: 10px 10px;
+    border-top: 1px solid #e7e6e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.icon {
+    width: 20px;
+    position: relative;
+}
+
+.icon::before, .icon::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+    top: -1.5px;
+}
+
+.icon::after{
+    transform: rotate(90deg);
+    transition: 0.5s linear;
+}
+
+.text {
+    background-color: white;
+    line-height: 20px;
+    margin: 3px 0;
+    color: black;
+    font-size: 1rem;
+    font-weight: 300;
+    height: 0;
+    opacity: 0;
+}
+
+.item:target .text {
+    opacity: 1;
+    height: auto;
+    padding: 20px 35px;
+    margin: 0;
+    margin-bottom: 6px;
+}
+
+.item:target .icon::after{
+    transform:rotateY(90deg)
+}
+
+.news {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 10rem;
+    
+}
+
+.topic{
+    color: #202124;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    text-decoration: none;
+}
+
+.hot-topic {
+    font-size: 20px;
+    line-height: 26px;
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+
+#vid-chevron {
+    border: none;
+}
+
 .container-top {
     border-top: none;
     border-left: none;
@@ -246,6 +348,11 @@ font-weight: 700;
 .grid-item-4{
     margin-left: 8.5rem;
    
+}
+
+.box1{
+    background-color: #8e8e8e;
+    border-radius: 10px;
 }
 
 .content {
@@ -449,7 +556,7 @@ p a {
 .main-messi{
     width: 66%;
     height: 80%;
-    border: 1px solid #202124;
+    border-right: 1px solid #cfcfcf
 }
 
 .grey-options{
