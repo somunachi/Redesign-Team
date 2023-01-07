@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="srp">
     <!-- main-container-begins  -->
     <div class="container">
         <!-- container-top begins here  -->
@@ -19,7 +19,7 @@
        <div class="top">
 
         <div class="google-logo">
-            <img src="googlelogo_color_272x92dp.png" alt="" class="logo">
+            <img src="googlelogo_color_272x92dp.png" alt="google logo" class="logo">
         </div>
 
         <form action="">
@@ -86,14 +86,73 @@
 
       </div>
 
-      <div class="grid-container">
-        <div class="grid-item-1"> <img src="messi_image_4.jpg" alt=""> </div>
-        <div class="grid-item-2"> <img src="messi_image_2.jpg" alt="" style="width: 264px; height: 187px;"> </div>
-        <div class="grid-item-3"> <img src="me.jpg" alt="" style="width: 332px; height: 186px;"> </div>
-        <div class="grid-item-4"> <img src="messi_image_3.jpg" alt="" style="width: 264px; height: 180px;"> </div>
+     <div class="top-grid">
+        <div class="grid-container">
+            <div class="grid-item-1"> <img src="messi_image_4.jpg" alt="" > </div>
+            <div class="grid-item-2"> <img src="messi_image_2.jpg" alt="" style="width: 264px; height: 187px;"> </div>
+            <div class="grid-item-3"> <img src="me.jpg" alt="" style="width: 332px; height: 186px;"> </div>
+            <div class="grid-item-4"> <img src="messi_image_3.jpg" alt="" style="width: 264px; height: 180px;"> </div>
+        </div>
 
+        <div class="stats-grid">
+            <div class="stats-one">
+                <p>&nbsp; Stats</p>
+            </div>
 
-    </div>
+                <div class="stats-two">
+                   World Cup · Argentina · 2022
+                </div>
+
+                <div class="stats-three">
+                    <div class="stats-three-list">
+                       <p> Matches</p>
+                       <p>5</p>
+                    </div>
+
+                    <div class="stats-three-list">
+                        <p> Goals</p>
+                        <p>4</p>
+                     </div>
+
+                     <div class="stats-three-list">
+                        <p> Assists</p>
+                        <p>2</p>
+                     </div>
+
+                     <div class="stats-three-list">
+                        <p> Yellow cards</p>
+                        <p>1</p>
+                     </div> 
+
+                     <div class="youtube-vid">
+                        <iframe class="youtube-vid" width="220" height="150" src="https://www.youtube.com/embed/2KenX1kH5e4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                     </div>
+
+                </div>
+
+        </div>
+
+        <div class="three-grid">
+            <div class="three-grid-top">
+               <div class="top1-container">
+                <div class="top1">
+                    <p class="top1-p1" style="font-size: 14px;">Height</p>
+                    <p class="top1-p2" style="font-size: 20px;"><b>1.69m</b></p>
+                </div>
+               </div>
+
+                <div class="top1-container">
+                    <div class="top2">
+                        <p>Age</p>
+                        <div>
+                            <p>35 years old</p>
+                            <p>(24 June 1987)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
       <!-- messi-content-ends  -->
 
     <!-- <div class="box1">
@@ -106,14 +165,69 @@
 
     <!--content begins -->
     <div class="content">
+
+       
        
       <!-- main--begins  -->
      
         <div class="main-messi">
 
+           
             <!-- accordion-section-starts-here -->
             <section class="list">
-                <h3>People also ask</h3>
+
+                <div class="top-stories">
+                  <div class="top-stories-top">
+                    <h2 class="top-stories-heading" style="font-size: 22px;">Top stories</h2>
+                    <h5 class="top-stories-heading top-stories-heading2">News about PSG, Lionel Messi <i class="bi bi-chevron-right" id="chevron-rt"></i></h5>
+                  </div>
+        
+                 <div class="top-stories-split-table">
+                    <div class="top-stories-column">
+                        <img id="dimg_47" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAAAQCAMAAACm24RqAAAAYFBMVEUAAAD///96enq0tLQfHx/q6urBwcHGxsZ/f38iIiImJiY6Ojpra2t2dnbn5+ewsLD39/fV1dWJiYkuLi4VFRXOzs41NTVDQ0NOTk6dnZ2mpqYICAiWlpZTU1Pg4OBcXFwKNDBTAAAArElEQVRIie3UtxKDMBRE0V2RBAgFTDAm6P//0iDX0FCgwrfZ4jVnNAzAv9uVUlwkn+YBkpeVT/sgqE1ykrFMn/btwPz8qKMG0iGLG9hHBKw2skVLZi/U7GD6cIwH6HIMw8g3jEbCCZ8iHOMBspppFwekBIWND2jbnaYINFbSUk2/DzMGoAzAlZt1KLjRs8GSTdTHG9oIftS19GHFMaPooPZVg/frsXJ+0vbvfl8NdgbSSBMRcgAAAABJRU5ErkJggg==" class="YQ4gaf zr758c wA1Bge" height="16" width="160" alt="Goal.com" data-atf="4" data-frt="0">
+                
+                        <div class="top-stories-split-table1">
+                            <div class="split-table-info">
+                                <a href="#" class="split-table-link">Messi avoids awkward reunion with Kylian Mbappe on first day back after Worl...</a>
+                                <p id="date-time">1 day ago</p>
+                            </div>
+    
+                            <div>
+                                <img src="assets\messi-mbappe.jpg" alt="" class="footballers-images" id="footballers-images">
+                            </div>
+                        </div>
+                        </div>
+                      
+                        
+                        <div>
+                           <div class="top-stories-column">
+                             <img id="dimg_43" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAAQCAMAAACbZSdJAAAAbFBMVEX///+pIyOpIiKlBgakAAClCgqnGxurFBSmFBT++/vivLzdsbGpBAT79PSoAAD47++/Y2PRk5O8WlrZoKC5S0uuLy/HenrcrKzPjIzMhoa3UlLpy8vFdHTmxMTEb2/x3t7s09O1Q0P15+eyODjrG1njAAABjklEQVQokY2S23KEMAiGCRIkWjXRXU9b3V37/u9Y0B62F52RceCPyTcBAjRmsFu1y6rlBGesNgumwtsue490O0OiWlaaKkhlHt7F0XKGdGp8MdWyyjxsSOupbI10dAfYajSy0rRPgQcpE0DK3X7nI6VkroOhjctXrOAxzZf3wopKqYA0TweJDMB4kAPldVVQdkkkaLEjYejVsdCzgolobMmvRmp9tDxoF3koPb5VRYZX8RQXjexp7chxXYuTJ0yiW0SDkryK49izOv4lHWbDvbFYD9u9Ro5bM3pHt1FPX5d7o6R0s1L6PYf8hfSDFXXEG7naxuUDJSXZG2odklR6K9EPg38h96OatcUys04ArCx90mzhm6xIu6NHuhcSCY47c32khbDW54ILy5iE529y3IdA13/JcNxpZENoD1dm2srxD1loY3UE/yWh907QZdp9+CGZsxGCZ9Z0OuIslMT2nnyQ9kdjmIkR2fMGk5eDjLHtdIBiHDWbNrZhUVfd1NmuLY5hLOIV505118befnwCG88YZNI/vCkAAAAASUVORK5CYII=" class="YQ4gaf zr758c wA1Bge" height="16" width="57" alt="The Mirror" data-atf="4" data-frt="0">
+                          
+                             <div class="top-stories-split-table2">
+                            <div class="split-table-info">
+                          
+                            <a href="#" class="split-table-link">Lionel Messi warned Aguero to 'stop drinking' after Argentina's World Cup final...</a>
+                            <p id="date-time">22 hours ago</p>
+                        </div>
+    
+                           <div>
+                            <img src="assets\lionel-aguero.jpg" alt="" class="footballers-images">
+                           </div>
+                           </div>
+                           </div>
+                        </div>
+                     
+                 </div>
+                 <div class="more-news-div">
+                    <button class="more-news">
+                          More news
+                          <i class="bi bi-arrow-right" style="font-size: 20px;"></i>
+                    </button>
+                </div>
+                </div>
+    
+
+                <h2 class="paa">People also ask</h2>
                 <div class="accordion-menu">
                     <div class="item" id="item1">
                         <a href="#item1" class="title">
@@ -164,7 +278,7 @@
                     </div>
                 </div>
         
-                <div class="accordion-menu">
+                <div class="accordion-menu last-accordion-menu">
                     <div class="item" id="item6">
                         <a href="#item6" class="title">
                             <span>What team is Messi going to 2022? </span>
@@ -175,6 +289,7 @@
                             PSG superstar Lionel Messi arrives with Argentina squad for start of Qatar 2022 World Cup. Watch PSG superstar Lionel Messi and the rest of the Argentina squad arrive at the 2022 World Cup.</p>
                     </div>
                 </div>
+                <p class="feedback feedback1">Feedback</p>
             </section>
             <!-- accordion-section-ends-here  -->
 

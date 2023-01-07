@@ -45,6 +45,8 @@ input:hover {
     font-size: 24px;
     height: 24px;
     width: 24px;
+    padding-left: 1.8rem;
+   margin-right: 4rem;
     margin-left: 31rem;
     margin-top: 30px;
     color: grey;
@@ -52,16 +54,6 @@ input:hover {
 
 .flex{
     display: flex;
-}
-
-.searchbar-divider{
-    display: flex;
-    position: absolute;
-    z-index: 2;
-    width: 10px;
-    margin-left: 27rem;
-    margin-top: 30px;
-    color: grey;
 }
 
 svg {
@@ -81,6 +73,7 @@ svg {
     width: 24px;
     margin-left: 36.5rem;
     margin-top: 30px;
+    padding-left: 2rem;
     
 }
 
@@ -90,6 +83,7 @@ svg {
     width: 24px;
     height: 24px;
     margin-bottom: -2rem;
+    padding-left: 2rem;
 }
 
 .searchbar-icons {
@@ -165,14 +159,18 @@ font-weight: 700;
 }
 
 .list {
-    width: 75%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:flex-start;
-    margin: auto;
+    margin-left: 5rem;
     padding-left: 5rem;
     padding-bottom: 1rem;
+}
+
+.last-accordion-menu{
+    padding-bottom: 2rem;
     border-bottom: 1px solid #cfcfcf;
 }
 
@@ -300,7 +298,7 @@ font-weight: 700;
 
 .hero-profession {
     margin-top: -25px;
-   
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -328,11 +326,18 @@ font-weight: 700;
     border: 1px solid green;
 }
 
+.top-grid{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: gray;
+    background-image: linear-gradient(180deg, #fff, #ffefff ,#f3f3f3);
+}
+
 .grid-container {
     box-sizing: content-box;
     overflow: hidden;
-    width: 600px;
-    height: 350px;
+    width: 550px;
+    height: 330px;
     margin-left: 10rem;
     border: 1px solid whitesmoke;
     border-radius: 15px;
@@ -342,20 +347,110 @@ font-weight: 700;
 
 .grid-item-2{
     margin-left: 8.5rem;
-   
 }
 
 .grid-item-4{
     margin-left: 8.5rem;
-   
 }
 
+.stats-grid{
+    display: flex;
+    flex-direction: column;
+    background-color: #e3e8ec;
+    width: 18%;
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+
+.stats-two{
+    padding: 10px 3px 20px 5px;
+    font-family: Google Sans,arial,sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+
+}
+
+.stats-three{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.youtube-vid {
+    border-radius: 15px;
+    margin-left: 8rem;
+    margin-top: -4.3rem;
+}
+
+.stats-three-list{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cfcfcf;
+    font-size: 14px;
+    font-weight: 400px;
+
+}
+
+.three-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.three-grid-top{
+    display: flex;
+    flex-direction: row;
+}
+
+.top1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #e3e8ec;
+    border-radius: 15px;
+    padding: 12px;
+    width: 90px;
+    height: 123px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.top1-p1 {
+    margin-top: -2px;
+}
+
+.top1-container :hover{
+    cursor: pointer;
+    background-color: #d7dadd;
+}
+
+.top2{
+    background-color: #e3e8ec;
+    border-radius: 15px;
+    padding: 12px;
+    width: 90px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.fa-circle {
+    font-size: 3px;
+}
 .box1{
     background-color: #8e8e8e;
     border-radius: 10px;
 }
 
 .content {
+    margin-top: 3rem;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -376,6 +471,109 @@ font-weight: 700;
     font-size: 14px;
     line-height: 22.12px;
     font-weight: 400;
+}
+
+#chevron-rt {
+    border: none;
+}
+
+.top-stories{
+    width: 650px;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e3e8ec;
+}
+
+.top-stories-top{
+    border-bottom: 1px solid #e3e8ec;
+}
+
+.top-stories-heading{
+    line-height: 2px;
+}
+
+.top-stories-heading2{
+    font-size: 16px;  
+}
+
+.top-stories-split-table{
+    display: flex;
+    flex-direction: row;
+    width: 10%;
+}
+
+.top-stories-split-table1, .top-stories-split-table2{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.top-stories-split-table1{
+    border-right: 1px solid #e3e8ec;
+    width: 350px;
+    padding-right: 10px;
+}
+
+.top-stories-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.top-stories-split-table2{
+    width: 350px;
+    margin-left: 10px;
+}
+
+#dimg_43{
+    margin-left: 10px;
+    margin-top: 1rem;
+}
+
+#dimg_47{
+    margin-top: 1rem;
+}
+
+.split-table-link{
+    line-height: 24px;
+    text-decoration: none;
+    color: #1a0dab;
+    
+}
+
+.split-table-info{
+    margin-right: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#date-time{
+    color: #70757a;
+    font-size: 14px;
+}
+
+/* #footballers-images{
+    margin-left: -10px;
+} */
+
+.more-news-div{
+    position: absolute;
+    z-index: 2;
+    margin-top: 0.2rem;
+    margin-left: 10rem;
+    
+}
+
+.more-news{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: transparent;
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 5px 100px 5px 100px;
+   
+}
+
+.paa {
+    margin-top: 5rem;
 }
 
 .wiki {
@@ -481,8 +679,8 @@ h5{
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
-    margin-left: -20px;
     margin-bottom: 1rem;
+
     border-bottom: 1px solid #cfcfcf;
 }
 
@@ -537,8 +735,8 @@ p a {
     font-size: 14px;
     line-height: 19px;
     margin-top: -4px;
- width: 50px;
- padding-left: 10px;
+    width: 50px;
+    padding-left: 10px;
 }
 
 .see-more {
@@ -565,6 +763,7 @@ p a {
     justify-content: center;
     padding-left: 24px;
     margin-top: 4rem;
+    margin-bottom: 5rem;
 }
 
 .grey {
@@ -627,6 +826,50 @@ footer {
     color: #8e8e8e;  
     margin-right: 15px;  
     text-decoration: none;
-    padding-right: 4px;
-  
+    padding-right: 4px; 
 }
+
+.goxjub{
+    padding-left: 1rem;
+    margin-left: 35rem;
+    border-left: 1px solid #cfcfcf;
+}
+
+.feedback1 {
+    position: absolute;
+    z-index: 2;
+    margin-top: 44.7rem;
+    margin-left: 34rem;
+
+}
+
+.sidebar{
+    border-left: 1px solid #cfcfcf;
+    margin-left: -0.1rem;
+    padding-left: 2rem;
+    height: max-content;
+}
+
+.main-messi{
+    border-right: none;
+}
+
+
+
+
+
+/* @media (width <= 375px, height <= 812px) {
+    body {
+        box-sizing: border-box;
+    }
+
+    .container{
+        width: ;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 100%;
+    }
+} */
